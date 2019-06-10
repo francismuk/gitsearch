@@ -9,13 +9,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./repository.component.css']
 })
 export class RepositoryComponent implements OnInit {
-  public searchMe = '';
+  public searchMe = 'francismuk';
   public githubRepo: string;
 
   repository: Repository;
   public searchRepo: string;
   public resultCount = 12;
-  users: User;
+  Repos: Repository;
 
     searchRepos() {
         this.searchRepo = '';
