@@ -25,6 +25,7 @@
     "add": "^2.0.6",
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
+    "font-awesome": "^4.7.0",
     "react-bootstrap": "^0.32.4",
     "rxjs": "~6.2.0",
     "to": "^0.2.9",
