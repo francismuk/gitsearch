@@ -8,7 +8,7 @@ import { AboutComponent } from '../about/about.component';
 
 // Defining routes
 const routes: Routes = [
-  {path: 'git', component: AppComponent},
+  {path: 'Home', component: AppComponent},
   {path: 'about', component: AboutComponent},
   {path: '', redirectTo: '/app', pathMatch: 'full'},
 ];

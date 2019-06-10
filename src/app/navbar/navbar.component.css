@@ -1,15 +1,12 @@
 .navbar-dark a {
-  /*float: left;*/
   display: block;
   color: White;
-  text-align: center;
-  padding: 15px 17px;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
 }
-
-
 .navbar-dark {
-  overflow: hidden;
   background-color: black;
+}
+h2{
+  color: chartreuse;
 }
