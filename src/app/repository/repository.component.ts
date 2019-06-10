@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./repository.component.css']
 })
 export class RepositoryComponent implements OnInit {
-  public searchMe = 'francismuk';
+  public searchMe = '';
   public githubRepo: string;
 
   repository: Repository;
