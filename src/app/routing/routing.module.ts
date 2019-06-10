@@ -1,10 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {RouterModule, Routes} from '@angular/router';
+
+import { AppComponent } from '../app.component';
+import { AboutComponent } from '../about/about.component';
+
+
+// Defining routes
+const routes: Routes = [
+  {path: 'git', component: AppComponent},
+  {path: 'about', component: AboutComponent},
+  {path: '', redirectTo: '/app', pathMatch: 'full'},
+];
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forRoot(routes)
   ],
+  exports: [RouterModule],
   declarations: []
 })
 export class RoutingModule { }

@@ -13,6 +13,7 @@ import { SearchFormComponent } from './search-form/search-form.component';
 import { AboutComponent } from './about/about.component';
 import { RouterModule, Routes } from '@angular/router';
 import { DateCountPipe } from './date-count.pipe';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
     SearchFormComponent,
     AboutComponent,
     DateCountPipe,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
