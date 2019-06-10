@@ -9,7 +9,7 @@ import { AboutComponent } from '../about/about.component';
 // Defining routes
 const routes: Routes = [
   {path: 'Home', component: AppComponent},
-  {path: 'about', component: AboutComponent},
+  {path: 'About', component: AboutComponent},
   {path: '', redirectTo: '/app', pathMatch: 'full'},
 ];
 

@@ -14,6 +14,8 @@ export class UserComponent implements OnInit {
   public githubUser: string;
 
   users: User ;
+  repository: Repository;
+    public searchRepo: string;
     public resultCount = 12;
 
 
@@ -22,11 +24,17 @@ export class UserComponent implements OnInit {
       this.searchMe  = username;
       this.ngOnInit();
   }
-  constructor(public githubUserRequest: SearchService) { }
+  constructor(public githubUserRequest: SearchService, public userRepos: SearchService) { }
 
   ngOnInit() {
       this.githubUserRequest.githubUser(this.searchMe);
       this.users = this.githubUserRequest.users;
+      this.userRepos.gitUserRepos(this.searchMe);
       console.log(this.users);
   }
+  searchRepos() {
+    this.searchRepo = '';
+    this.resultCount = 10;
+
+}
 }
