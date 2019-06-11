@@ -16,6 +16,7 @@ export class RepositoryComponent implements OnInit {
   public searchRepo: string;
   public resultCount = 12;
   Repos: Repository;
+  users: User;
 
     searchRepos() {
         this.searchRepo = '';
